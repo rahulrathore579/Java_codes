@@ -1,0 +1,24 @@
+import java.util.*;
+class Max_min{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("size of array ");
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        System.out.println("enter the element of array:");
+        int i=0;
+        while(i<n){
+            arr[i]=sc.nextInt();
+            i++;
+        }
+        int t=0;
+        int max=arr[0];
+        while(t< arr.length){
+            if(arr[t]>max){
+                max=arr[t];
+            }
+            t++;
+        }
+        System.out.println(max);
+
+    }
