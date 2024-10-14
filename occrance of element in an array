@@ -1,0 +1,28 @@
+import java.util.*;
+public class Occrance {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("size of array: ");
+		int size=sc.nextInt();
+		System.out.println("enter element of array: ");
+		int[] array=new int[size];
+		int i=0;
+		while(i<array.length) {
+			array[i]=sc.nextInt();
+			i++;
+		}
+		System.out.println("occ of number ");
+		int num=sc.nextInt();
+		
+		
+		int occ=0;
+		int t = 0;
+		while(t<array.length) {
+			if(array[t]==num) {
+				occ++;
+			}
+			t++;
+		}
+		System.out.println(occ);
+	}
+}
